@@ -1,7 +1,17 @@
+import type { Metadata } from "next"
 import { redirect } from "next/navigation"
 import { getSupabaseServerClient } from "@/lib/supabase/server"
 import { isSupabaseConfigured } from "@/lib/supabase/env"
 import { AdminShell } from "@/components/admin/admin-shell"
+
+export const metadata: Metadata = {
+  title: "Smoke Pods - Admin",
+  icons: {
+    icon: "/logo.jpeg",
+    shortcut: "/logo.jpeg",
+    apple: "/logo.jpeg",
+  },
+}
 
 export default async function AdminLayout({
   children,
