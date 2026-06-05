@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diogenes Santos - Portfólio Pessoal</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="fix-image.css">
+</head>
+<body>
+    <!-- Header com navegação sempre visível -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <h2>Diogenes Santos</h2>
+            </div>
+            <!-- Menu de navegação principal -->
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#" onclick="showPage('home')" class="nav-link active">Home</a></li>
+                <li><a href="#" onclick="showPage('sobre')" class="nav-link">Sobre Mim</a></li>
+                <li><a href="#" onclick="showPage('formacao')" class="nav-link">Formação</a></li>
+                <li><a href="#" onclick="showPage('portfolio')" class="nav-link">Portfólio</a></li>
+                <li><a href="#" onclick="showPage('contato')" class="nav-link">Contato</a></li>
+            </ul>
+            <!-- Botão hambúrguer para mobile -->
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Container principal para todas as páginas -->
+    <main class="main-container">
+        
+        <!-- Página Home -->
+        <section id="home" class="page active">
+            <div class="hero-section">
+                <div class="hero-content">
+                    <h1 class="hero-title">Olá, eu sou Diogenes Santos</h1>
+                    <p class="hero-subtitle">Desenvolvedor Backend Java/Kotlin</p>
+                    <p class="hero-description">
+                        Desenvolvedor back-end apaixonado por criar soluções robustas e eficientes, especializado em Java e Kotlin.
+                    </p>
+                    <button class="cta-button" onclick="showPage('portfolio')">
+                        Ver Meu Trabalho
+                    </button>
+                </div>
+                <div class="hero-image">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/136348909-TwKpHMTOtKO5lhSwmzbXDCo5WdYE9l.jpeg" alt="Diogenes Santos - Desenvolvedor Backend" class="profile-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                    <div class="profile-placeholder" style="display: none;">
+                        <span>Diogenes Santos</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página Sobre Mim -->
+        <section id="sobre" class="page">
+            <div class="container">
+                <h1 class="page-title">Sobre Mim</h1>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h2>Quem sou eu?</h2>
+                        <p>
+                            Olá, meu nome é Diogenes. Sou um desenvolvedor back-end apaixonado por criar 
+                            soluções robustas e eficientes, mas também me aventuro pelo front-end utilizando 
+                            HTML, CSS, JavaScript e frameworks modernos. Desde que iniciei meus estudos em 
+                            meados de 2023, concentrei-me no desenvolvimento em Java – linguagem na qual já 
+                            foram implementados todos os meus projetos. Em 2025, ampliei meus horizontes e 
+                            passei a trabalhar com Kotlin e C#, sobretudo para aprofundar meus conhecimentos 
+                            no desenvolvimento mobile.
+                        </p>
+                        
+                        <h3>Hobbies e Interesses</h3>
+                        <ul class="hobbies-list">
+                            <li>💻 Desenvolvimento de aplicações backend robustas</li>
+                            <li>📱 Desenvolvimento mobile com Kotlin</li>
+                            <li>🎮 Jogos eletrônicos e tecnologia</li>
+                            <li>📚 Leitura de documentação técnica e artigos sobre programação</li>
+                            <li>🏃‍♂️ Atividades físicas e exercícios</li>
+                            <li>🎵 Música e entretenimento</li>
+                        </ul>
+
+                        <h3>Foco Profissional</h3>
+                        <p>
+                            Minha paixão está no desenvolvimento backend, criando APIs eficientes, 
+                            sistemas escaláveis e soluções que realmente fazem diferença. Sempre 
+                            busco aprender novas tecnologias e aprimorar minhas habilidades em Java e Kotlin.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página Formação -->
+        <section id="formacao" class="page">
+            <div class="container">
+                <h1 class="page-title">Formação Educacional</h1>
+                
+                <div class="education-section">
+                    <h2>Educação Formal</h2>
+                    <div class="education-item">
+                        <h3>Análise e Desenvolvimento de Sistemas</h3>
+                        <p class="institution">UNITER - Centro Universitário</p>
+                        <p class="period">2023 - 2027 (em andamento)</p>
+                        <p class="description">
+                            Formação focada em desenvolvimento de software, análise de sistemas, 
+                            programação orientada a objetos e tecnologias modernas de desenvolvimento.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="languages-section">
+                    <h2>Idiomas</h2>
+                    <div class="language-grid">
+                        <div class="language-item">
+                            <h3>Português</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 100%"></div>
+                            </div>
+                            <span class="skill-level">Nativo</span>
+                        </div>
+                        
+                        <div class="language-item">
+                            <h3>Inglês</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 40%"></div>
+                            </div>
+                            <span class="skill-level">Básico</span>
+                        </div>
+                        
+                        <div class="language-item">
+                            <h3>Espanhol</h3>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 60%"></div>
+                            </div>
+                            <span class="skill-level">Intermediário</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="certifications-section">
+                    <h2>Certificações e Cursos</h2>
+                    <ul class="certifications-list">
+                        <li>EBAC - Especialista Java</li>
+                        <li>ALURA - Java</li>
+                        <li>One Oracle - Alura</li>
+                        <li>Alura - Kotlin Desenvolvimento Mobile</li>
+                        <li>Algaworks - Especialista Java</li>
+                        <li>Algaworks - Especialista JPA</li>
+                        <li>Algaworks - Especialista Spring Boot</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Página Portfólio -->
+        <section id="portfolio" class="page">
+            <div class="container">
+                <h1 class="page-title">Meu Portfólio</h1>
+                
+                <div class="portfolio-grid">
+    <!-- Projeto 1 - WhatsApp API -->
+    <div class="portfolio-item">
+        <div class="project-image">
+            <div class="image-placeholder">WhatsApp API</div>
+        </div>
+        <div class="project-info">
+            <h3>WhatsApp API</h3>
+            <p>API robusta para integração com WhatsApp, desenvolvida em Java. 
+               Permite envio de mensagens, gerenciamento de contatos e automação de conversas.</p>
+            <div class="project-tech">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">REST API</span>
+                <span class="tech-tag">WhatsApp Business</span>
+            </div>
+            <a href="https://github.com/DiogenesSSantos/whatsapp-api" class="project-link" target="_blank">Ver no GitHub</a>
+        </div>
+    </div>
+
+    <!-- Projeto 2 - Mercado Livro -->
+    <div class="portfolio-item">
+        <div class="project-image">
+            <div class="image-placeholder">Mercado Livro</div>
+        </div>
+        <div class="project-info">
+            <h3>Mercado Livro</h3>
+            <p>Sistema completo de marketplace para livros com funcionalidades de compra, venda, 
+               gerenciamento de estoque e sistema de avaliações.</p>
+            <div class="project-tech">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">JPA/Hibernate</span>
+                <span class="tech-tag">MySQL</span>
+            </div>
+            <a href="https://github.com/DiogenesSSantos/mercadolivro" class="project-link" target="_blank">Ver no GitHub</a>
+        </div>
+    </div>
+
+    <!-- Projeto 3 - E-commerce Spring -->
+    <div class="portfolio-item">
+        <div class="project-image">
+            <div class="image-placeholder">E-commerce Spring</div>
+        </div>
+        <div class="project-info">
+            <h3>E-commerce Projeto Spring</h3>
+            <p>Plataforma completa de e-commerce desenvolvida com Spring Framework. 
+               Inclui carrinho de compras, sistema de pagamento e painel administrativo.</p>
+            <div class="project-tech">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Spring Boot</span>
+                <span class="tech-tag">Spring Security</span>
+                <span class="tech-tag">Thymeleaf</span>
+            </div>
+            <a href="https://github.com/DiogenesSSantos/ecommer-projeto-spring" class="project-link" target="_blank">Ver no GitHub</a>
+        </div>
+    </div>
+
+    <!-- Projeto 4 - Adicional -->
+    <div class="portfolio-item">
+        <div class="project-image">
+            <div class="image-placeholder">Mais Projetos</div>
+        </div>
+        <div class="project-info">
+            <h3>Outros Projetos</h3>
+            <p>Diversos projetos desenvolvidos durante minha jornada de aprendizado, 
+               incluindo APIs REST, aplicações web e estudos de caso.</p>
+            <div class="project-tech">
+                <span class="tech-tag">Java</span>
+                <span class="tech-tag">Kotlin</span>
+                <span class="tech-tag">Spring</span>
+                <span class="tech-tag">JPA</span>
+            </div>
+            <a href="https://github.com/DiogenesSSantos" class="project-link" target="_blank">Ver GitHub</a>
+        </div>
+    </div>
+</div>
+            </div>
+        </section>
+
+        <!-- Página Contato -->
+        <section id="contato" class="page">
+            <div class="container">
+                <h1 class="page-title">Entre em Contato</h1>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h2>Vamos conversar?</h2>
+                        <p>
+                            Estou sempre aberto a novas oportunidades e projetos interessantes. 
+                            Entre em contato comigo através do formulário ao lado ou pelos 
+                            canais abaixo.
+                        </p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <strong>📧 Email:</strong>
+                                <span>diogenescontatoofficial@hotmail.com</span>
+                            </div>
+                            <div class="contact-item">
+                                <strong>📱 Telefone:</strong>
+                                <span>+55 (81) 8476-8748</span>
+                            </div>
+                            <div class="contact-item">
+                                <strong>📍 Localização:</strong>
+                                <span>Brasil</span>
+                            </div>
+                            <div class="contact-item">
+                                <strong>💼 GitHub:</strong>
+                                <span>https://github.com/DiogenesSSantos</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Formulário de contato -->
+                    <div class="contact-form-container">
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-group">
+                                <label for="nome">Nome Completo *</label>
+                                <input type="text" id="nome" name="nome" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="assunto">Assunto</label>
+                                <input type="text" id="assunto" name="assunto">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem *</label>
+                                <textarea id="mensagem" name="mensagem" rows="6" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-button">
+                                Enviar Mensagem
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer sempre visível -->
+    <footer class="footer">
+    <div class="container">
+        <p>&copy; 2025 Diogenes Santos. Todos os direitos reservados.</p>
+        <p>Desenvolvido com HTML, CSS e JavaScript</p>
+    </div>
+</footer>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

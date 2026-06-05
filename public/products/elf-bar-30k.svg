@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="600" height="600" role="img" aria-label="Elf Bar 30K">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#100905"/>
+      <stop offset="100%" stop-color="#22150a"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#ee9c5a" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#ee9c5a" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ee9c5a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#ee9c5a"/>
+      <stop offset="100%" stop-color="#e94db0"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="600" fill="url(#bg)"/>
+  <circle cx="300" cy="230" r="220" fill="url(#glow)"/>
+  <rect x="80" y="500" width="440" height="6" rx="3" fill="url(#accent)" opacity="0.85"/>
+  <text x="300" y="245" text-anchor="middle" font-family="Geist, 'Segoe UI', sans-serif" font-size="68" font-weight="800" fill="#ffffff" letter-spacing="2">ELF BAR</text>
+  <text x="300" y="345" text-anchor="middle" font-family="Geist, 'Segoe UI', sans-serif" font-size="120" font-weight="800" fill="#ee9c5a" letter-spacing="4">30K</text>
+  <text x="300" y="395" text-anchor="middle" font-family="Geist, 'Segoe UI', sans-serif" font-size="22" font-weight="500" fill="#bdb6bb" letter-spacing="6">30 000 PUFFS</text>
+  <text x="300" y="470" text-anchor="middle" font-family="Geist, 'Segoe UI', sans-serif" font-size="22" font-weight="600" fill="#e94db0" letter-spacing="3">SMOKE PODS</text>
+</svg>
