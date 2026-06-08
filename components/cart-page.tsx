@@ -109,7 +109,7 @@ ${customerData.observations ? `*Observacoes:* ${customerData.observations}` : ""
     if (!isFormValid()) return
 
     const message = generateWhatsAppMessage()
-    const whatsappNumber = "5511974019773"
+    const whatsappNumber = "5511940793593"
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`
 
     window.open(whatsappUrl, "_blank")

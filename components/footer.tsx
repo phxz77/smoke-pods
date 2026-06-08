@@ -19,7 +19,7 @@ export function Footer() {
             <div className="space-y-2 text-sm text-muted-foreground">
               <p className="flex items-center gap-2">
                 <Phone className="h-4 w-4 text-primary" />
-                WhatsApp: (11) 99999-9999
+                WhatsApp: (11) 94079-3593
               </p>
               <p className="flex items-center gap-2">
                 <Instagram className="h-4 w-4 text-primary" />
